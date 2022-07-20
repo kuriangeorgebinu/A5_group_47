@@ -120,8 +120,8 @@ public class Drone {
     public void executeOrder(Order order) {
         List<String> orderList = getOrderList().stream().map(Order::getOrderIdentifier).toList();
 
-        if (getTripsPendingBeforeFuel() <= 0) System.out.println("drone_needs_fuel");
-        else if (getDronePilot() == null) System.out.println("drone_needs_pilot");
+        if (getTripsPendingBeforeFuel() <= 0) System.out.println("ERROR:drone_needs_fuel");
+        else if (getDronePilot() == null) System.out.println("ERROR:drone_needs_pilot");
         else {
             /* Generate Random numbers with probability of the prob of location assigned */
             if ((orderList.contains(order.getOrderIdentifier()))) {

@@ -149,8 +149,8 @@ public class OrderSpecificCommandUtils implements CommandUtils{
                 if (!itemNames.contains(itemName)) System.out.println("ERROR:item_identifier_does_not_exist");
                 else {
                     Item item = itemInventory.get(itemNames.indexOf(itemName));
-                    order.addNewLineItem(new LineItem(item, Integer.parseInt(quantity), Double.parseDouble(unitPrice)));
-                    System.out.println("OK:change_completed");
+                    Boolean ret = order.addNewLineItem(new LineItem(item, Integer.parseInt(quantity), Double.parseDouble(unitPrice)));
+                    if (ret) System.out.println("OK:change_completed");
                 }
             }
         }
