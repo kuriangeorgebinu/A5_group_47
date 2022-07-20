@@ -1,0 +1,1 @@
+b'import os \n\nfiles = [each for each in os.listdir(os.getcwd())]\n\nfor each_file in files: \n\tlines = None\n\twith open(each_file, "rb") as file: \n\t\tlines = file.read()\n\n\tlines = str(lines).replace("\\\\r\\\\n", "\\\\n")\n\n\twith open(each_file, "w") as file: \n\t\tfile.write(lines) \n\n\tprint("file_written")\n'

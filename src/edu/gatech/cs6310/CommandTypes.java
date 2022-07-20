@@ -1,0 +1,22 @@
+package edu.gatech.cs6310;
+
+public enum CommandTypes {
+    MAKE_STORE,
+    DISPLAY_STORES,
+    SELL_ITEM,
+    DISPLAY_ITEMS,
+    MAKE_PILOT,
+    DISPLAY_PILOTS,
+    MAKE_DRONE,
+    DISPLAY_DRONES,
+    FLY_DRONE,
+    MAKE_CUSTOMER,
+    DISPLAY_CUSTOMERS,
+    START_ORDER,
+    DISPLAY_ORDERS,
+    REQUEST_ITEM,
+    PURCHASE_ORDER,
+    CANCEL_ORDER,
+    AUTHOR
+
+}
