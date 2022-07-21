@@ -52,7 +52,7 @@ public class Store {
     }
 
     public List<Order> getOrderList() {
-        return orderList;
+        return orderList == null ? new ArrayList<>() : orderList; 
     }
 
     //Setters

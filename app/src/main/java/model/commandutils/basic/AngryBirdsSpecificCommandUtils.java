@@ -28,7 +28,8 @@ public class AngryBirdsSpecificCommandUtils implements CommandUtils {
                 System.out.println("OK:change_completed");
                 return "OK:change_completed";
             }
-        } else if (customerIdentifiers.contains(locationTypeId)) {
+         else if (customerIdentifiers.contains(locationTypeId)) {
+            System.out.println(command); 
             List<AngryBird> angryBirds = new ArrayList<>();
             for (int i = 0; i < numberOfBirds; i++){
                 AngryBird angryBird = new AngryBird();
@@ -39,6 +40,8 @@ public class AngryBirdsSpecificCommandUtils implements CommandUtils {
             System.out.println("OK:change_completed");
             return "OK:change_completed";
         }
+        }
+        System.out.println("The location identifier is not valid");
         return "The location identifier is not valid";
     }
 
