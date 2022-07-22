@@ -3,3 +3,8 @@
 
 # Ignore Gradle build output directory
 build
+
+*.jar
+app/bin/
+.vscode/
+target/
