@@ -5,3 +5,7 @@ required java jdk 17
 - `find app -name "*.java" | xargs javac -d ./target`
 - `jar cfe drone_delivery.jar Sample_A5_Frame -C ./target .`
 - `java -jar drone_delivery.jar`
+
+or if make is installed:
+
+`make run-locally`
