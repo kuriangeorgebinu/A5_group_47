@@ -1,3 +1,6 @@
+
+import javax.swing.JOptionPane;
+
 /*
  * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
  * Click nbfs://nbhost/SystemFileSystem/Templates/GUIForms/JFrame.java to edit this template
@@ -37,8 +40,6 @@ public class Sample_A5_Frame extends javax.swing.JFrame {
         jLabel45 = new javax.swing.JLabel();
         revenue = new javax.swing.JTextField();
         makeStoreButton = new javax.swing.JButton();
-        jScrollPane19 = new javax.swing.JScrollPane();
-        statusWindow = new javax.swing.JTextArea();
         probCollisionStore = new javax.swing.JSlider();
         jLabel46 = new javax.swing.JLabel();
         jLabel47 = new javax.swing.JLabel();
@@ -49,22 +50,20 @@ public class Sample_A5_Frame extends javax.swing.JFrame {
         displayStoreButton = new javax.swing.JButton();
         jScrollPane20 = new javax.swing.JScrollPane();
         storeDisplayPane = new javax.swing.JTextArea();
-        display_items = new javax.swing.JPanel();
-        jScrollPane22 = new javax.swing.JScrollPane();
-        itemDisplay = new javax.swing.JTextArea();
-        displayItemsButton = new javax.swing.JButton();
-        jLabel51 = new javax.swing.JLabel();
-        storeNameDisplayItems = new javax.swing.JTextField();
         sell_items = new javax.swing.JPanel();
         jLabel48 = new javax.swing.JLabel();
         storeNameSellItem = new javax.swing.JTextField();
         jLabel49 = new javax.swing.JLabel();
         itemNameSellItem = new javax.swing.JTextField();
         sellItemButton = new javax.swing.JButton();
-        jScrollPane21 = new javax.swing.JScrollPane();
-        statusWindowSellItem = new javax.swing.JTextArea();
         jLabel50 = new javax.swing.JLabel();
         itemCountSellItem = new javax.swing.JTextField();
+        display_items = new javax.swing.JPanel();
+        jScrollPane22 = new javax.swing.JScrollPane();
+        itemDisplay = new javax.swing.JTextArea();
+        displayItemsButton = new javax.swing.JButton();
+        jLabel51 = new javax.swing.JLabel();
+        storeNameDisplayItems = new javax.swing.JTextField();
         orders_card = new javax.swing.JTabbedPane();
         start_order = new javax.swing.JPanel();
         jLabel119 = new javax.swing.JLabel();
@@ -78,12 +77,6 @@ public class Sample_A5_Frame extends javax.swing.JFrame {
         jScrollPane48 = new javax.swing.JScrollPane();
         statusWindowStartOrder = new javax.swing.JTextArea();
         customerIdentifierStartOrder = new javax.swing.JTextField();
-        display_orders = new javax.swing.JPanel();
-        jScrollPane49 = new javax.swing.JScrollPane();
-        displayOrderWindow = new javax.swing.JTextArea();
-        jLabel123 = new javax.swing.JLabel();
-        storeNameDisplayOrders = new javax.swing.JTextField();
-        displayOrdersButton = new javax.swing.JButton();
         request_items_to_order = new javax.swing.JPanel();
         jLabel124 = new javax.swing.JLabel();
         jLabel125 = new javax.swing.JLabel();
@@ -106,6 +99,12 @@ public class Sample_A5_Frame extends javax.swing.JFrame {
         purchaseOrderButton = new javax.swing.JButton();
         jScrollPane52 = new javax.swing.JScrollPane();
         statusWindowPurchaseOrder = new javax.swing.JTextArea();
+        display_orders = new javax.swing.JPanel();
+        jScrollPane49 = new javax.swing.JScrollPane();
+        displayOrderWindow = new javax.swing.JTextArea();
+        jLabel123 = new javax.swing.JLabel();
+        storeNameDisplayOrders = new javax.swing.JTextField();
+        displayOrdersButton = new javax.swing.JButton();
         cancel_order = new javax.swing.JPanel();
         jLabel129 = new javax.swing.JLabel();
         storeNameCancelOrder = new javax.swing.JTextField();
@@ -115,10 +114,6 @@ public class Sample_A5_Frame extends javax.swing.JFrame {
         jScrollPane51 = new javax.swing.JScrollPane();
         statusWindowCancelOrder = new javax.swing.JTextArea();
         customers_card = new javax.swing.JTabbedPane();
-        display_customers = new javax.swing.JPanel();
-        jScrollPane13 = new javax.swing.JScrollPane();
-        displayCustomerWindow = new javax.swing.JTextArea();
-        displayCustomersButton = new javax.swing.JButton();
         make_customer = new javax.swing.JPanel();
         jLabel23 = new javax.swing.JLabel();
         customerAccountField = new javax.swing.JTextField();
@@ -143,39 +138,11 @@ public class Sample_A5_Frame extends javax.swing.JFrame {
         jLabel30 = new javax.swing.JLabel();
         numAngryBirdsCustomer = new javax.swing.JSlider();
         makeAngryBirdButton = new javax.swing.JButton();
+        display_customers = new javax.swing.JPanel();
+        jScrollPane13 = new javax.swing.JScrollPane();
+        displayCustomerWindow = new javax.swing.JTextArea();
+        displayCustomersButton = new javax.swing.JButton();
         employees_card = new javax.swing.JTabbedPane();
-        make_drone = new javax.swing.JPanel();
-        jLabel147 = new javax.swing.JLabel();
-        jLabel148 = new javax.swing.JLabel();
-        jLabel149 = new javax.swing.JLabel();
-        jLabel150 = new javax.swing.JLabel();
-        storeNameMakeDrone = new javax.swing.JTextField();
-        droneID = new javax.swing.JTextField();
-        weightCapacity = new javax.swing.JTextField();
-        deliveriesBeforeRefuel = new javax.swing.JTextField();
-        makeDroneButton = new javax.swing.JButton();
-        jScrollPane59 = new javax.swing.JScrollPane();
-        statusMakeDrone = new javax.swing.JTextArea();
-        display_pilots = new javax.swing.JPanel();
-        jScrollPane58 = new javax.swing.JScrollPane();
-        displayPilots = new javax.swing.JTextArea();
-        displayPilotsButton = new javax.swing.JButton();
-        fly_drone = new javax.swing.JPanel();
-        jLabel160 = new javax.swing.JLabel();
-        storeNameFlyDrone = new javax.swing.JTextField();
-        jLabel161 = new javax.swing.JLabel();
-        droneIDFlyDrone = new javax.swing.JTextField();
-        jLabel162 = new javax.swing.JLabel();
-        pilotAccountFlyDrone = new javax.swing.JTextField();
-        flyDroneButton = new javax.swing.JButton();
-        jScrollPane63 = new javax.swing.JScrollPane();
-        flyDroneStatus = new javax.swing.JTextArea();
-        display_drones = new javax.swing.JPanel();
-        jScrollPane60 = new javax.swing.JScrollPane();
-        droneDisplay = new javax.swing.JTextArea();
-        jLabel151 = new javax.swing.JLabel();
-        storeNameDisplayDrones = new javax.swing.JTextField();
-        displayDronesButton = new javax.swing.JButton();
         make_pilot = new javax.swing.JPanel();
         jLabel140 = new javax.swing.JLabel();
         jLabel141 = new javax.swing.JLabel();
@@ -194,6 +161,38 @@ public class Sample_A5_Frame extends javax.swing.JFrame {
         makePilotButton = new javax.swing.JButton();
         jScrollPane57 = new javax.swing.JScrollPane();
         statusMakePilot = new javax.swing.JTextArea();
+        display_pilots = new javax.swing.JPanel();
+        jScrollPane58 = new javax.swing.JScrollPane();
+        displayPilots = new javax.swing.JTextArea();
+        displayPilotsButton = new javax.swing.JButton();
+        make_drone = new javax.swing.JPanel();
+        jLabel147 = new javax.swing.JLabel();
+        jLabel148 = new javax.swing.JLabel();
+        jLabel149 = new javax.swing.JLabel();
+        jLabel150 = new javax.swing.JLabel();
+        storeNameMakeDrone = new javax.swing.JTextField();
+        droneID = new javax.swing.JTextField();
+        weightCapacity = new javax.swing.JTextField();
+        deliveriesBeforeRefuel = new javax.swing.JTextField();
+        makeDroneButton = new javax.swing.JButton();
+        jScrollPane59 = new javax.swing.JScrollPane();
+        statusMakeDrone = new javax.swing.JTextArea();
+        display_drones = new javax.swing.JPanel();
+        jScrollPane60 = new javax.swing.JScrollPane();
+        droneDisplay = new javax.swing.JTextArea();
+        jLabel151 = new javax.swing.JLabel();
+        storeNameDisplayDrones = new javax.swing.JTextField();
+        displayDronesButton = new javax.swing.JButton();
+        fly_drone = new javax.swing.JPanel();
+        jLabel160 = new javax.swing.JLabel();
+        storeNameFlyDrone = new javax.swing.JTextField();
+        jLabel161 = new javax.swing.JLabel();
+        droneIDFlyDrone = new javax.swing.JTextField();
+        jLabel162 = new javax.swing.JLabel();
+        pilotAccountFlyDrone = new javax.swing.JTextField();
+        flyDroneButton = new javax.swing.JButton();
+        jScrollPane63 = new javax.swing.JScrollPane();
+        flyDroneStatus = new javax.swing.JTextArea();
         leftPanel = new javax.swing.JPanel();
         btnStore = new javax.swing.JButton();
         btnEmployees = new javax.swing.JButton();
@@ -221,6 +220,11 @@ public class Sample_A5_Frame extends javax.swing.JFrame {
         store_card.setForeground(new java.awt.Color(0, 0, 0));
         store_card.setTabLayoutPolicy(javax.swing.JTabbedPane.SCROLL_TAB_LAYOUT);
         store_card.setFont(new java.awt.Font("Keep Calm", 0, 12)); // NOI18N
+        store_card.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                store_cardMouseClicked(evt);
+            }
+        });
 
         make_store.setBackground(java.awt.Color.white);
 
@@ -250,11 +254,6 @@ public class Sample_A5_Frame extends javax.swing.JFrame {
                 makeStoreButtonActionPerformed(evt);
             }
         });
-
-        statusWindow.setBackground(java.awt.Color.white);
-        statusWindow.setColumns(20);
-        statusWindow.setRows(5);
-        jScrollPane19.setViewportView(statusWindow);
 
         jLabel46.setFont(new java.awt.Font("Keep Calm", 0, 14)); // NOI18N
         jLabel46.setForeground(java.awt.Color.black);
@@ -289,69 +288,55 @@ public class Sample_A5_Frame extends javax.swing.JFrame {
         make_storeLayout.setHorizontalGroup(
             make_storeLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(make_storeLayout.createSequentialGroup()
-                .addGap(67, 67, 67)
-                .addGroup(make_storeLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addGroup(make_storeLayout.createSequentialGroup()
+                .addGap(57, 57, 57)
+                .addGroup(make_storeLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
+                    .addGroup(make_storeLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                         .addGroup(make_storeLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addComponent(storeNameLabel)
-                            .addComponent(jLabel45, javax.swing.GroupLayout.PREFERRED_SIZE, 85, javax.swing.GroupLayout.PREFERRED_SIZE))
-                        .addGap(28, 28, 28)
-                        .addGroup(make_storeLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
-                            .addComponent(storeName)
-                            .addComponent(revenue, javax.swing.GroupLayout.PREFERRED_SIZE, 237, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(makeStoreButton, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.PREFERRED_SIZE, 120, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                            .addGroup(make_storeLayout.createSequentialGroup()
+                                .addGap(41, 41, 41)
+                                .addComponent(jLabel47))
+                            .addComponent(numAngryBirdsStore, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.PREFERRED_SIZE, 373, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(setNumAngryBirds, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.PREFERRED_SIZE, 168, javax.swing.GroupLayout.PREFERRED_SIZE))
+                        .addComponent(revenue, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.PREFERRED_SIZE, 261, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, make_storeLayout.createSequentialGroup()
+                            .addComponent(storeNameLabel, javax.swing.GroupLayout.PREFERRED_SIZE, 101, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                            .addComponent(storeName, javax.swing.GroupLayout.PREFERRED_SIZE, 261, javax.swing.GroupLayout.PREFERRED_SIZE)))
                     .addGroup(make_storeLayout.createSequentialGroup()
-                        .addGap(108, 108, 108)
-                        .addComponent(jScrollPane19, javax.swing.GroupLayout.PREFERRED_SIZE, 246, javax.swing.GroupLayout.PREFERRED_SIZE)))
-                .addGroup(make_storeLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addGroup(make_storeLayout.createSequentialGroup()
-                        .addGap(64, 64, 64)
-                        .addGroup(make_storeLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addComponent(jLabel47, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.PREFERRED_SIZE, 344, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(numAngryBirdsStore, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.PREFERRED_SIZE, 360, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(probCollisionStore, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.PREFERRED_SIZE, 360, javax.swing.GroupLayout.PREFERRED_SIZE)))
-                    .addGroup(make_storeLayout.createSequentialGroup()
-                        .addGap(79, 79, 79)
-                        .addComponent(jLabel46, javax.swing.GroupLayout.PREFERRED_SIZE, 336, javax.swing.GroupLayout.PREFERRED_SIZE))
-                    .addGroup(make_storeLayout.createSequentialGroup()
-                        .addGap(170, 170, 170)
-                        .addComponent(setProbButton))
-                    .addGroup(make_storeLayout.createSequentialGroup()
-                        .addGap(160, 160, 160)
-                        .addComponent(setNumAngryBirds, javax.swing.GroupLayout.PREFERRED_SIZE, 166, javax.swing.GroupLayout.PREFERRED_SIZE)))
-                .addContainerGap(83, Short.MAX_VALUE))
+                        .addComponent(jLabel45, javax.swing.GroupLayout.PREFERRED_SIZE, 95, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addGap(279, 279, 279))
+                    .addComponent(makeStoreButton, javax.swing.GroupLayout.PREFERRED_SIZE, 168, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(jLabel46)
+                    .addComponent(probCollisionStore, javax.swing.GroupLayout.PREFERRED_SIZE, 374, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(setProbButton, javax.swing.GroupLayout.PREFERRED_SIZE, 168, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addContainerGap(497, Short.MAX_VALUE))
         );
         make_storeLayout.setVerticalGroup(
             make_storeLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(make_storeLayout.createSequentialGroup()
-                .addGap(63, 63, 63)
-                .addGroup(make_storeLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addGroup(make_storeLayout.createSequentialGroup()
-                        .addGroup(make_storeLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                            .addComponent(storeNameLabel)
-                            .addComponent(storeName, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                        .addGroup(make_storeLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                            .addComponent(jLabel45, javax.swing.GroupLayout.PREFERRED_SIZE, 26, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(revenue, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                        .addGap(27, 27, 27)
-                        .addComponent(makeStoreButton, javax.swing.GroupLayout.PREFERRED_SIZE, 40, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addGap(34, 34, 34)
-                        .addComponent(jScrollPane19, javax.swing.GroupLayout.PREFERRED_SIZE, 125, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 11, javax.swing.GroupLayout.PREFERRED_SIZE))
-                    .addGroup(make_storeLayout.createSequentialGroup()
-                        .addComponent(jLabel46, javax.swing.GroupLayout.PREFERRED_SIZE, 24, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addGap(18, 18, 18)
-                        .addComponent(probCollisionStore, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addGap(18, 18, 18)
-                        .addComponent(setProbButton, javax.swing.GroupLayout.PREFERRED_SIZE, 40, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                        .addComponent(jLabel47)
-                        .addGap(18, 18, 18)
-                        .addComponent(numAngryBirdsStore, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addGap(18, 18, 18)
-                        .addComponent(setNumAngryBirds, javax.swing.GroupLayout.PREFERRED_SIZE, 40, javax.swing.GroupLayout.PREFERRED_SIZE)))
-                .addGap(137, 137, 137))
+                .addGap(25, 25, 25)
+                .addGroup(make_storeLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(storeName, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(storeNameLabel))
+                .addGap(18, 18, 18)
+                .addGroup(make_storeLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(revenue, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(jLabel45, javax.swing.GroupLayout.PREFERRED_SIZE, 26, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addGap(18, 18, 18)
+                .addComponent(makeStoreButton, javax.swing.GroupLayout.PREFERRED_SIZE, 40, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(29, 29, 29)
+                .addComponent(jLabel46, javax.swing.GroupLayout.PREFERRED_SIZE, 24, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(18, 18, 18)
+                .addComponent(probCollisionStore, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(18, 18, 18)
+                .addComponent(setProbButton, javax.swing.GroupLayout.PREFERRED_SIZE, 40, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(39, 39, 39)
+                .addComponent(jLabel47)
+                .addGap(18, 18, 18)
+                .addComponent(numAngryBirdsStore, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(18, 18, 18)
+                .addComponent(setNumAngryBirds, javax.swing.GroupLayout.PREFERRED_SIZE, 40, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addContainerGap(36, Short.MAX_VALUE))
         );
 
         store_card.addTab("Make Store", make_store);
@@ -391,10 +376,91 @@ public class Sample_A5_Frame extends javax.swing.JFrame {
                 .addComponent(displayStoreButton, javax.swing.GroupLayout.PREFERRED_SIZE, 40, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(32, 32, 32)
                 .addComponent(jScrollPane20, javax.swing.GroupLayout.PREFERRED_SIZE, 319, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addContainerGap(58, Short.MAX_VALUE))
+                .addContainerGap(56, Short.MAX_VALUE))
         );
 
         store_card.addTab("Display Stores", display_stores);
+
+        sell_items.setBackground(new java.awt.Color(255, 255, 255));
+
+        jLabel48.setFont(new java.awt.Font("Keep Calm", 0, 14)); // NOI18N
+        jLabel48.setForeground(new java.awt.Color(0, 0, 0));
+        jLabel48.setText("Store Name");
+
+        storeNameSellItem.setBackground(new java.awt.Color(255, 255, 255));
+
+        jLabel49.setFont(new java.awt.Font("Keep Calm", 0, 14)); // NOI18N
+        jLabel49.setForeground(new java.awt.Color(0, 0, 0));
+        jLabel49.setText("Item Name");
+
+        itemNameSellItem.setBackground(new java.awt.Color(255, 255, 255));
+        itemNameSellItem.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                itemNameSellItemActionPerformed(evt);
+            }
+        });
+
+        sellItemButton.setBackground(new java.awt.Color(90, 88, 166));
+        sellItemButton.setFont(new java.awt.Font("Keep Calm", 0, 14)); // NOI18N
+        sellItemButton.setForeground(new java.awt.Color(255, 255, 255));
+        sellItemButton.setText("Sell_Item");
+        sellItemButton.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                sellItemButtonActionPerformed(evt);
+            }
+        });
+
+        jLabel50.setFont(new java.awt.Font("Keep Calm", 0, 14)); // NOI18N
+        jLabel50.setForeground(new java.awt.Color(0, 0, 0));
+        jLabel50.setText("Item Count");
+
+        itemCountSellItem.setBackground(new java.awt.Color(255, 255, 255));
+
+        javax.swing.GroupLayout sell_itemsLayout = new javax.swing.GroupLayout(sell_items);
+        sell_items.setLayout(sell_itemsLayout);
+        sell_itemsLayout.setHorizontalGroup(
+            sell_itemsLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(sell_itemsLayout.createSequentialGroup()
+                .addGap(48, 48, 48)
+                .addGroup(sell_itemsLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
+                    .addComponent(sellItemButton, javax.swing.GroupLayout.PREFERRED_SIZE, 120, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addGroup(sell_itemsLayout.createSequentialGroup()
+                        .addGroup(sell_itemsLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
+                            .addGroup(sell_itemsLayout.createSequentialGroup()
+                                .addGroup(sell_itemsLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                                    .addComponent(jLabel48, javax.swing.GroupLayout.Alignment.TRAILING)
+                                    .addComponent(jLabel49, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.PREFERRED_SIZE, 89, javax.swing.GroupLayout.PREFERRED_SIZE))
+                                .addGap(29, 29, 29))
+                            .addGroup(sell_itemsLayout.createSequentialGroup()
+                                .addComponent(jLabel50, javax.swing.GroupLayout.PREFERRED_SIZE, 99, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                .addGap(18, 18, 18)))
+                        .addGroup(sell_itemsLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addComponent(storeNameSellItem, javax.swing.GroupLayout.PREFERRED_SIZE, 218, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(itemCountSellItem, javax.swing.GroupLayout.PREFERRED_SIZE, 218, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(itemNameSellItem, javax.swing.GroupLayout.PREFERRED_SIZE, 218, javax.swing.GroupLayout.PREFERRED_SIZE))))
+                .addContainerGap(544, Short.MAX_VALUE))
+        );
+        sell_itemsLayout.setVerticalGroup(
+            sell_itemsLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(sell_itemsLayout.createSequentialGroup()
+                .addGap(83, 83, 83)
+                .addGroup(sell_itemsLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(jLabel48, javax.swing.GroupLayout.PREFERRED_SIZE, 27, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(storeNameSellItem, javax.swing.GroupLayout.PREFERRED_SIZE, 25, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addGap(18, 18, 18)
+                .addGroup(sell_itemsLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(jLabel49)
+                    .addComponent(itemNameSellItem, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addGap(18, 18, 18)
+                .addGroup(sell_itemsLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(jLabel50)
+                    .addComponent(itemCountSellItem, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addGap(30, 30, 30)
+                .addComponent(sellItemButton, javax.swing.GroupLayout.PREFERRED_SIZE, 40, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addContainerGap(228, Short.MAX_VALUE))
+        );
+
+        store_card.addTab("Sell Item", sell_items);
 
         display_items.setBackground(new java.awt.Color(255, 255, 255));
 
@@ -451,99 +517,10 @@ public class Sample_A5_Frame extends javax.swing.JFrame {
                     .addComponent(displayItemsButton, javax.swing.GroupLayout.PREFERRED_SIZE, 40, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addGap(31, 31, 31)
                 .addComponent(jScrollPane22, javax.swing.GroupLayout.PREFERRED_SIZE, 302, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addContainerGap(67, Short.MAX_VALUE))
+                .addContainerGap(65, Short.MAX_VALUE))
         );
 
         store_card.addTab("Display Items", display_items);
-
-        sell_items.setBackground(new java.awt.Color(255, 255, 255));
-
-        jLabel48.setFont(new java.awt.Font("Keep Calm", 0, 14)); // NOI18N
-        jLabel48.setForeground(new java.awt.Color(0, 0, 0));
-        jLabel48.setText("Store Name");
-
-        storeNameSellItem.setBackground(new java.awt.Color(255, 255, 255));
-
-        jLabel49.setFont(new java.awt.Font("Keep Calm", 0, 14)); // NOI18N
-        jLabel49.setForeground(new java.awt.Color(0, 0, 0));
-        jLabel49.setText("Item Name");
-
-        itemNameSellItem.setBackground(new java.awt.Color(255, 255, 255));
-        itemNameSellItem.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                itemNameSellItemActionPerformed(evt);
-            }
-        });
-
-        sellItemButton.setBackground(new java.awt.Color(90, 88, 166));
-        sellItemButton.setFont(new java.awt.Font("Keep Calm", 0, 14)); // NOI18N
-        sellItemButton.setForeground(new java.awt.Color(255, 255, 255));
-        sellItemButton.setText("Sell_Item");
-        sellItemButton.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                sellItemButtonActionPerformed(evt);
-            }
-        });
-
-        statusWindowSellItem.setBackground(new java.awt.Color(255, 255, 255));
-        statusWindowSellItem.setColumns(20);
-        statusWindowSellItem.setRows(5);
-        jScrollPane21.setViewportView(statusWindowSellItem);
-
-        jLabel50.setFont(new java.awt.Font("Keep Calm", 0, 14)); // NOI18N
-        jLabel50.setForeground(new java.awt.Color(0, 0, 0));
-        jLabel50.setText("Item Count");
-
-        itemCountSellItem.setBackground(new java.awt.Color(255, 255, 255));
-
-        javax.swing.GroupLayout sell_itemsLayout = new javax.swing.GroupLayout(sell_items);
-        sell_items.setLayout(sell_itemsLayout);
-        sell_itemsLayout.setHorizontalGroup(
-            sell_itemsLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(sell_itemsLayout.createSequentialGroup()
-                .addGap(174, 174, 174)
-                .addGroup(sell_itemsLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
-                    .addComponent(sellItemButton, javax.swing.GroupLayout.PREFERRED_SIZE, 120, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addGroup(sell_itemsLayout.createSequentialGroup()
-                        .addGroup(sell_itemsLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
-                            .addGroup(sell_itemsLayout.createSequentialGroup()
-                                .addGroup(sell_itemsLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                                    .addComponent(jLabel48, javax.swing.GroupLayout.Alignment.TRAILING)
-                                    .addComponent(jLabel49, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.PREFERRED_SIZE, 89, javax.swing.GroupLayout.PREFERRED_SIZE))
-                                .addGap(29, 29, 29))
-                            .addGroup(sell_itemsLayout.createSequentialGroup()
-                                .addComponent(jLabel50, javax.swing.GroupLayout.PREFERRED_SIZE, 99, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                .addGap(18, 18, 18)))
-                        .addGroup(sell_itemsLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addComponent(storeNameSellItem, javax.swing.GroupLayout.PREFERRED_SIZE, 218, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(itemCountSellItem, javax.swing.GroupLayout.PREFERRED_SIZE, 218, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(itemNameSellItem, javax.swing.GroupLayout.PREFERRED_SIZE, 218, javax.swing.GroupLayout.PREFERRED_SIZE)))
-                    .addComponent(jScrollPane21, javax.swing.GroupLayout.PREFERRED_SIZE, 335, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addContainerGap(418, Short.MAX_VALUE))
-        );
-        sell_itemsLayout.setVerticalGroup(
-            sell_itemsLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(sell_itemsLayout.createSequentialGroup()
-                .addGap(47, 47, 47)
-                .addGroup(sell_itemsLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(jLabel48, javax.swing.GroupLayout.PREFERRED_SIZE, 27, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(storeNameSellItem, javax.swing.GroupLayout.PREFERRED_SIZE, 25, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addGap(18, 18, 18)
-                .addGroup(sell_itemsLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(jLabel49)
-                    .addComponent(itemNameSellItem, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addGap(18, 18, 18)
-                .addGroup(sell_itemsLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(jLabel50)
-                    .addComponent(itemCountSellItem, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addGap(30, 30, 30)
-                .addComponent(sellItemButton, javax.swing.GroupLayout.PREFERRED_SIZE, 40, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(40, 40, 40)
-                .addComponent(jScrollPane21, javax.swing.GroupLayout.PREFERRED_SIZE, 138, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addContainerGap(88, Short.MAX_VALUE))
-        );
-
-        store_card.addTab("Sell Item", sell_items);
 
         cards_container.add(store_card, "card3");
 
@@ -646,71 +623,10 @@ public class Sample_A5_Frame extends javax.swing.JFrame {
                 .addComponent(startOrderButton, javax.swing.GroupLayout.PREFERRED_SIZE, 40, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(35, 35, 35)
                 .addComponent(jScrollPane48, javax.swing.GroupLayout.PREFERRED_SIZE, 117, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addContainerGap(67, Short.MAX_VALUE))
+                .addContainerGap(63, Short.MAX_VALUE))
         );
 
         orders_card.addTab("Start Order", start_order);
-
-        display_orders.setBackground(java.awt.Color.white);
-
-        displayOrderWindow.setBackground(java.awt.Color.white);
-        displayOrderWindow.setColumns(20);
-        displayOrderWindow.setRows(5);
-        jScrollPane49.setViewportView(displayOrderWindow);
-
-        jLabel123.setBackground(new java.awt.Color(0, 0, 0));
-        jLabel123.setFont(new java.awt.Font("Keep Calm", 0, 14)); // NOI18N
-        jLabel123.setForeground(new java.awt.Color(0, 0, 0));
-        jLabel123.setText("Store Name");
-
-        storeNameDisplayOrders.setBackground(java.awt.Color.white);
-        storeNameDisplayOrders.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                storeNameDisplayOrdersActionPerformed(evt);
-            }
-        });
-
-        displayOrdersButton.setBackground(new java.awt.Color(90, 88, 166));
-        displayOrdersButton.setFont(new java.awt.Font("Keep Calm", 0, 13)); // NOI18N
-        displayOrdersButton.setForeground(new java.awt.Color(255, 255, 255));
-        displayOrdersButton.setText("Display_Orders");
-        displayOrdersButton.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                displayOrdersButtonActionPerformed(evt);
-            }
-        });
-
-        javax.swing.GroupLayout display_ordersLayout = new javax.swing.GroupLayout(display_orders);
-        display_orders.setLayout(display_ordersLayout);
-        display_ordersLayout.setHorizontalGroup(
-            display_ordersLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(display_ordersLayout.createSequentialGroup()
-                .addGap(151, 151, 151)
-                .addGroup(display_ordersLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
-                    .addComponent(displayOrdersButton, javax.swing.GroupLayout.PREFERRED_SIZE, 151, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addGroup(display_ordersLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                        .addComponent(jScrollPane49, javax.swing.GroupLayout.PREFERRED_SIZE, 382, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addGroup(display_ordersLayout.createSequentialGroup()
-                            .addComponent(jLabel123, javax.swing.GroupLayout.PREFERRED_SIZE, 89, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addGap(18, 18, 18)
-                            .addComponent(storeNameDisplayOrders, javax.swing.GroupLayout.PREFERRED_SIZE, 275, javax.swing.GroupLayout.PREFERRED_SIZE))))
-                .addContainerGap(395, Short.MAX_VALUE))
-        );
-        display_ordersLayout.setVerticalGroup(
-            display_ordersLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(display_ordersLayout.createSequentialGroup()
-                .addGap(35, 35, 35)
-                .addGroup(display_ordersLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(jLabel123, javax.swing.GroupLayout.PREFERRED_SIZE, 33, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(storeNameDisplayOrders, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addGap(18, 18, 18)
-                .addComponent(displayOrdersButton, javax.swing.GroupLayout.PREFERRED_SIZE, 40, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(37, 37, 37)
-                .addComponent(jScrollPane49, javax.swing.GroupLayout.PREFERRED_SIZE, 263, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addContainerGap(68, Short.MAX_VALUE))
-        );
-
-        orders_card.addTab("Display Orders", display_orders);
 
         request_items_to_order.setBackground(java.awt.Color.white);
 
@@ -821,7 +737,7 @@ public class Sample_A5_Frame extends javax.swing.JFrame {
                 .addComponent(requestItemButton, javax.swing.GroupLayout.PREFERRED_SIZE, 40, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(18, 18, 18)
                 .addComponent(jScrollPane50, javax.swing.GroupLayout.PREFERRED_SIZE, 119, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addContainerGap(61, Short.MAX_VALUE))
+                .addContainerGap(57, Short.MAX_VALUE))
         );
 
         orders_card.addTab("Request Item to Order", request_items_to_order);
@@ -894,10 +810,71 @@ public class Sample_A5_Frame extends javax.swing.JFrame {
                 .addComponent(purchaseOrderButton, javax.swing.GroupLayout.PREFERRED_SIZE, 40, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(30, 30, 30)
                 .addComponent(jScrollPane52, javax.swing.GroupLayout.PREFERRED_SIZE, 144, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addContainerGap(135, Short.MAX_VALUE))
+                .addContainerGap(131, Short.MAX_VALUE))
         );
 
         orders_card.addTab("Purchase Order", purchase_order);
+
+        display_orders.setBackground(java.awt.Color.white);
+
+        displayOrderWindow.setBackground(java.awt.Color.white);
+        displayOrderWindow.setColumns(20);
+        displayOrderWindow.setRows(5);
+        jScrollPane49.setViewportView(displayOrderWindow);
+
+        jLabel123.setBackground(new java.awt.Color(0, 0, 0));
+        jLabel123.setFont(new java.awt.Font("Keep Calm", 0, 14)); // NOI18N
+        jLabel123.setForeground(new java.awt.Color(0, 0, 0));
+        jLabel123.setText("Store Name");
+
+        storeNameDisplayOrders.setBackground(java.awt.Color.white);
+        storeNameDisplayOrders.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                storeNameDisplayOrdersActionPerformed(evt);
+            }
+        });
+
+        displayOrdersButton.setBackground(new java.awt.Color(90, 88, 166));
+        displayOrdersButton.setFont(new java.awt.Font("Keep Calm", 0, 13)); // NOI18N
+        displayOrdersButton.setForeground(new java.awt.Color(255, 255, 255));
+        displayOrdersButton.setText("Display_Orders");
+        displayOrdersButton.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                displayOrdersButtonActionPerformed(evt);
+            }
+        });
+
+        javax.swing.GroupLayout display_ordersLayout = new javax.swing.GroupLayout(display_orders);
+        display_orders.setLayout(display_ordersLayout);
+        display_ordersLayout.setHorizontalGroup(
+            display_ordersLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(display_ordersLayout.createSequentialGroup()
+                .addGap(151, 151, 151)
+                .addGroup(display_ordersLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
+                    .addComponent(displayOrdersButton, javax.swing.GroupLayout.PREFERRED_SIZE, 151, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addGroup(display_ordersLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                        .addComponent(jScrollPane49, javax.swing.GroupLayout.PREFERRED_SIZE, 382, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addGroup(display_ordersLayout.createSequentialGroup()
+                            .addComponent(jLabel123, javax.swing.GroupLayout.PREFERRED_SIZE, 89, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addGap(18, 18, 18)
+                            .addComponent(storeNameDisplayOrders, javax.swing.GroupLayout.PREFERRED_SIZE, 275, javax.swing.GroupLayout.PREFERRED_SIZE))))
+                .addContainerGap(395, Short.MAX_VALUE))
+        );
+        display_ordersLayout.setVerticalGroup(
+            display_ordersLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(display_ordersLayout.createSequentialGroup()
+                .addGap(35, 35, 35)
+                .addGroup(display_ordersLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(jLabel123, javax.swing.GroupLayout.PREFERRED_SIZE, 33, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(storeNameDisplayOrders, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addGap(18, 18, 18)
+                .addComponent(displayOrdersButton, javax.swing.GroupLayout.PREFERRED_SIZE, 40, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(37, 37, 37)
+                .addComponent(jScrollPane49, javax.swing.GroupLayout.PREFERRED_SIZE, 263, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addContainerGap(64, Short.MAX_VALUE))
+        );
+
+        orders_card.addTab("Display Orders", display_orders);
 
         cancel_order.setBackground(java.awt.Color.white);
 
@@ -967,7 +944,7 @@ public class Sample_A5_Frame extends javax.swing.JFrame {
                 .addComponent(cancelOrderButton, javax.swing.GroupLayout.PREFERRED_SIZE, 40, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(29, 29, 29)
                 .addComponent(jScrollPane51, javax.swing.GroupLayout.PREFERRED_SIZE, 143, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addContainerGap(134, Short.MAX_VALUE))
+                .addContainerGap(130, Short.MAX_VALUE))
         );
 
         orders_card.addTab("Cancel Order", cancel_order);
@@ -978,46 +955,6 @@ public class Sample_A5_Frame extends javax.swing.JFrame {
         customers_card.setForeground(new java.awt.Color(0, 0, 0));
         customers_card.setTabLayoutPolicy(javax.swing.JTabbedPane.SCROLL_TAB_LAYOUT);
         customers_card.setFont(new java.awt.Font("Keep Calm", 0, 12)); // NOI18N
-
-        display_customers.setBackground(new java.awt.Color(255, 255, 255));
-
-        displayCustomerWindow.setBackground(new java.awt.Color(255, 255, 255));
-        displayCustomerWindow.setColumns(20);
-        displayCustomerWindow.setRows(5);
-        jScrollPane13.setViewportView(displayCustomerWindow);
-
-        displayCustomersButton.setBackground(new java.awt.Color(90, 88, 166));
-        displayCustomersButton.setFont(new java.awt.Font("Keep Calm", 0, 14)); // NOI18N
-        displayCustomersButton.setForeground(new java.awt.Color(255, 255, 255));
-        displayCustomersButton.setText("Display_Customers");
-        displayCustomersButton.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                displayCustomersButtonActionPerformed(evt);
-            }
-        });
-
-        javax.swing.GroupLayout display_customersLayout = new javax.swing.GroupLayout(display_customers);
-        display_customers.setLayout(display_customersLayout);
-        display_customersLayout.setHorizontalGroup(
-            display_customersLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(display_customersLayout.createSequentialGroup()
-                .addGap(139, 139, 139)
-                .addGroup(display_customersLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addComponent(displayCustomersButton, javax.swing.GroupLayout.PREFERRED_SIZE, 179, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(jScrollPane13, javax.swing.GroupLayout.PREFERRED_SIZE, 566, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addContainerGap(223, Short.MAX_VALUE))
-        );
-        display_customersLayout.setVerticalGroup(
-            display_customersLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(display_customersLayout.createSequentialGroup()
-                .addGap(43, 43, 43)
-                .addComponent(displayCustomersButton, javax.swing.GroupLayout.PREFERRED_SIZE, 40, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(18, 18, 18)
-                .addComponent(jScrollPane13, javax.swing.GroupLayout.PREFERRED_SIZE, 331, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addContainerGap(58, Short.MAX_VALUE))
-        );
-
-        customers_card.addTab("Display Customers", display_customers);
 
         make_customer.setBackground(new java.awt.Color(255, 255, 255));
 
@@ -1232,6 +1169,46 @@ public class Sample_A5_Frame extends javax.swing.JFrame {
 
         customers_card.addTab("Make Customer", make_customer);
 
+        display_customers.setBackground(new java.awt.Color(255, 255, 255));
+
+        displayCustomerWindow.setBackground(new java.awt.Color(255, 255, 255));
+        displayCustomerWindow.setColumns(20);
+        displayCustomerWindow.setRows(5);
+        jScrollPane13.setViewportView(displayCustomerWindow);
+
+        displayCustomersButton.setBackground(new java.awt.Color(90, 88, 166));
+        displayCustomersButton.setFont(new java.awt.Font("Keep Calm", 0, 14)); // NOI18N
+        displayCustomersButton.setForeground(new java.awt.Color(255, 255, 255));
+        displayCustomersButton.setText("Display_Customers");
+        displayCustomersButton.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                displayCustomersButtonActionPerformed(evt);
+            }
+        });
+
+        javax.swing.GroupLayout display_customersLayout = new javax.swing.GroupLayout(display_customers);
+        display_customers.setLayout(display_customersLayout);
+        display_customersLayout.setHorizontalGroup(
+            display_customersLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(display_customersLayout.createSequentialGroup()
+                .addGap(139, 139, 139)
+                .addGroup(display_customersLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addComponent(displayCustomersButton, javax.swing.GroupLayout.PREFERRED_SIZE, 179, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(jScrollPane13, javax.swing.GroupLayout.PREFERRED_SIZE, 566, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addContainerGap(223, Short.MAX_VALUE))
+        );
+        display_customersLayout.setVerticalGroup(
+            display_customersLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(display_customersLayout.createSequentialGroup()
+                .addGap(43, 43, 43)
+                .addComponent(displayCustomersButton, javax.swing.GroupLayout.PREFERRED_SIZE, 40, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(18, 18, 18)
+                .addComponent(jScrollPane13, javax.swing.GroupLayout.PREFERRED_SIZE, 331, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addContainerGap(58, Short.MAX_VALUE))
+        );
+
+        customers_card.addTab("Display Customers", display_customers);
+
         cards_container.add(customers_card, "card3");
 
         employees_card.setBackground(new java.awt.Color(255, 255, 255));
@@ -1239,310 +1216,6 @@ public class Sample_A5_Frame extends javax.swing.JFrame {
         employees_card.setTabLayoutPolicy(javax.swing.JTabbedPane.SCROLL_TAB_LAYOUT);
         employees_card.setCursor(new java.awt.Cursor(java.awt.Cursor.DEFAULT_CURSOR));
         employees_card.setFont(new java.awt.Font("Keep Calm", 0, 12)); // NOI18N
-
-        make_drone.setBackground(java.awt.Color.white);
-
-        jLabel147.setBackground(new java.awt.Color(0, 0, 0));
-        jLabel147.setFont(new java.awt.Font("Keep Calm", 0, 14)); // NOI18N
-        jLabel147.setForeground(new java.awt.Color(0, 0, 0));
-        jLabel147.setText("Store Name");
-
-        jLabel148.setBackground(new java.awt.Color(0, 0, 0));
-        jLabel148.setFont(new java.awt.Font("Keep Calm", 0, 14)); // NOI18N
-        jLabel148.setForeground(new java.awt.Color(0, 0, 0));
-        jLabel148.setText("Drone ID");
-
-        jLabel149.setBackground(new java.awt.Color(0, 0, 0));
-        jLabel149.setFont(new java.awt.Font("Keep Calm", 0, 14)); // NOI18N
-        jLabel149.setForeground(new java.awt.Color(0, 0, 0));
-        jLabel149.setText("Weight Capacity");
-
-        jLabel150.setBackground(new java.awt.Color(0, 0, 0));
-        jLabel150.setFont(new java.awt.Font("Keep Calm", 0, 14)); // NOI18N
-        jLabel150.setForeground(new java.awt.Color(0, 0, 0));
-        jLabel150.setText("Deliveries Before Refuel");
-
-        storeNameMakeDrone.setBackground(java.awt.Color.white);
-        storeNameMakeDrone.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                storeNameMakeDroneActionPerformed(evt);
-            }
-        });
-
-        droneID.setBackground(java.awt.Color.white);
-        droneID.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                droneIDActionPerformed(evt);
-            }
-        });
-
-        weightCapacity.setBackground(java.awt.Color.white);
-        weightCapacity.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                weightCapacityActionPerformed(evt);
-            }
-        });
-
-        deliveriesBeforeRefuel.setBackground(java.awt.Color.white);
-        deliveriesBeforeRefuel.setToolTipText("");
-
-        makeDroneButton.setBackground(new java.awt.Color(90, 88, 166));
-        makeDroneButton.setFont(new java.awt.Font("Keep Calm", 0, 14)); // NOI18N
-        makeDroneButton.setForeground(new java.awt.Color(255, 255, 255));
-        makeDroneButton.setText("Make_Drone");
-        makeDroneButton.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                makeDroneButtonActionPerformed(evt);
-            }
-        });
-
-        statusMakeDrone.setBackground(java.awt.Color.white);
-        statusMakeDrone.setColumns(20);
-        statusMakeDrone.setRows(5);
-        jScrollPane59.setViewportView(statusMakeDrone);
-
-        javax.swing.GroupLayout make_droneLayout = new javax.swing.GroupLayout(make_drone);
-        make_drone.setLayout(make_droneLayout);
-        make_droneLayout.setHorizontalGroup(
-            make_droneLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(make_droneLayout.createSequentialGroup()
-                .addGap(146, 146, 146)
-                .addGroup(make_droneLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addComponent(jLabel149)
-                    .addGroup(make_droneLayout.createSequentialGroup()
-                        .addGroup(make_droneLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addGroup(make_droneLayout.createSequentialGroup()
-                                .addGroup(make_droneLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                                    .addComponent(jLabel148, javax.swing.GroupLayout.PREFERRED_SIZE, 118, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                    .addComponent(jLabel147, javax.swing.GroupLayout.PREFERRED_SIZE, 118, javax.swing.GroupLayout.PREFERRED_SIZE))
-                                .addGap(95, 95, 95))
-                            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, make_droneLayout.createSequentialGroup()
-                                .addComponent(jLabel150, javax.swing.GroupLayout.PREFERRED_SIZE, 195, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                .addGap(18, 18, 18)))
-                        .addGroup(make_droneLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
-                            .addComponent(makeDroneButton, javax.swing.GroupLayout.PREFERRED_SIZE, 135, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addGroup(make_droneLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING, false)
-                                .addComponent(deliveriesBeforeRefuel, javax.swing.GroupLayout.Alignment.LEADING)
-                                .addComponent(weightCapacity, javax.swing.GroupLayout.Alignment.LEADING)
-                                .addComponent(droneID, javax.swing.GroupLayout.Alignment.LEADING)
-                                .addComponent(storeNameMakeDrone, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.PREFERRED_SIZE, 276, javax.swing.GroupLayout.PREFERRED_SIZE))
-                            .addComponent(jScrollPane59, javax.swing.GroupLayout.PREFERRED_SIZE, 276, javax.swing.GroupLayout.PREFERRED_SIZE))))
-                .addContainerGap(293, Short.MAX_VALUE))
-        );
-        make_droneLayout.setVerticalGroup(
-            make_droneLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(make_droneLayout.createSequentialGroup()
-                .addGap(51, 51, 51)
-                .addGroup(make_droneLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(storeNameMakeDrone, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(jLabel147, javax.swing.GroupLayout.PREFERRED_SIZE, 23, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addGap(18, 18, 18)
-                .addGroup(make_droneLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(droneID, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(jLabel148))
-                .addGap(18, 18, 18)
-                .addGroup(make_droneLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(weightCapacity, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(jLabel149))
-                .addGap(18, 18, 18)
-                .addGroup(make_droneLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(deliveriesBeforeRefuel, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(jLabel150))
-                .addGap(18, 18, 18)
-                .addComponent(makeDroneButton, javax.swing.GroupLayout.PREFERRED_SIZE, 40, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(33, 33, 33)
-                .addComponent(jScrollPane59, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addContainerGap(110, Short.MAX_VALUE))
-        );
-
-        employees_card.addTab("Make Drone", make_drone);
-
-        display_pilots.setBackground(new java.awt.Color(255, 255, 255));
-
-        displayPilots.setBackground(new java.awt.Color(255, 255, 255));
-        displayPilots.setColumns(20);
-        displayPilots.setRows(5);
-        jScrollPane58.setViewportView(displayPilots);
-
-        displayPilotsButton.setBackground(new java.awt.Color(90, 88, 166));
-        displayPilotsButton.setFont(new java.awt.Font("Keep Calm", 0, 14)); // NOI18N
-        displayPilotsButton.setForeground(new java.awt.Color(255, 255, 255));
-        displayPilotsButton.setText("Display_Pilots");
-        displayPilotsButton.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                displayPilotsButtonActionPerformed(evt);
-            }
-        });
-
-        javax.swing.GroupLayout display_pilotsLayout = new javax.swing.GroupLayout(display_pilots);
-        display_pilots.setLayout(display_pilotsLayout);
-        display_pilotsLayout.setHorizontalGroup(
-            display_pilotsLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(display_pilotsLayout.createSequentialGroup()
-                .addGap(154, 154, 154)
-                .addGroup(display_pilotsLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addComponent(displayPilotsButton, javax.swing.GroupLayout.PREFERRED_SIZE, 138, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(jScrollPane58, javax.swing.GroupLayout.PREFERRED_SIZE, 599, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addContainerGap(175, Short.MAX_VALUE))
-        );
-        display_pilotsLayout.setVerticalGroup(
-            display_pilotsLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(display_pilotsLayout.createSequentialGroup()
-                .addGap(50, 50, 50)
-                .addComponent(displayPilotsButton, javax.swing.GroupLayout.PREFERRED_SIZE, 40, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(28, 28, 28)
-                .addComponent(jScrollPane58, javax.swing.GroupLayout.PREFERRED_SIZE, 334, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addContainerGap(38, Short.MAX_VALUE))
-        );
-
-        employees_card.addTab("Display Pilots", display_pilots);
-
-        fly_drone.setBackground(new java.awt.Color(255, 255, 255));
-
-        jLabel160.setFont(new java.awt.Font("Keep Calm", 0, 14)); // NOI18N
-        jLabel160.setForeground(new java.awt.Color(0, 0, 0));
-        jLabel160.setText("Store Name");
-
-        storeNameFlyDrone.setBackground(new java.awt.Color(255, 255, 255));
-        storeNameFlyDrone.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                storeNameFlyDroneActionPerformed(evt);
-            }
-        });
-
-        jLabel161.setFont(new java.awt.Font("Keep Calm", 0, 14)); // NOI18N
-        jLabel161.setForeground(new java.awt.Color(0, 0, 0));
-        jLabel161.setText("Drone ID");
-
-        droneIDFlyDrone.setBackground(new java.awt.Color(255, 255, 255));
-
-        jLabel162.setFont(new java.awt.Font("Keep Calm", 0, 14)); // NOI18N
-        jLabel162.setForeground(new java.awt.Color(0, 0, 0));
-        jLabel162.setText("Pilot Account");
-
-        pilotAccountFlyDrone.setBackground(new java.awt.Color(255, 255, 255));
-
-        flyDroneButton.setBackground(new java.awt.Color(90, 88, 166));
-        flyDroneButton.setFont(new java.awt.Font("Keep Calm", 0, 14)); // NOI18N
-        flyDroneButton.setForeground(new java.awt.Color(255, 255, 255));
-        flyDroneButton.setText("Fly_Drone");
-        flyDroneButton.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                flyDroneButtonActionPerformed(evt);
-            }
-        });
-
-        flyDroneStatus.setBackground(new java.awt.Color(255, 255, 255));
-        flyDroneStatus.setColumns(20);
-        flyDroneStatus.setRows(5);
-        jScrollPane63.setViewportView(flyDroneStatus);
-
-        javax.swing.GroupLayout fly_droneLayout = new javax.swing.GroupLayout(fly_drone);
-        fly_drone.setLayout(fly_droneLayout);
-        fly_droneLayout.setHorizontalGroup(
-            fly_droneLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(fly_droneLayout.createSequentialGroup()
-                .addGap(154, 154, 154)
-                .addGroup(fly_droneLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addComponent(jLabel160, javax.swing.GroupLayout.PREFERRED_SIZE, 89, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addGroup(fly_droneLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
-                        .addComponent(flyDroneButton, javax.swing.GroupLayout.PREFERRED_SIZE, 120, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addGroup(fly_droneLayout.createSequentialGroup()
-                            .addGroup(fly_droneLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                                .addComponent(jLabel161)
-                                .addComponent(jLabel162))
-                            .addGap(18, 18, 18)
-                            .addGroup(fly_droneLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
-                                .addComponent(droneIDFlyDrone)
-                                .addComponent(pilotAccountFlyDrone)
-                                .addComponent(storeNameFlyDrone)
-                                .addComponent(jScrollPane63, javax.swing.GroupLayout.PREFERRED_SIZE, 273, javax.swing.GroupLayout.PREFERRED_SIZE)))))
-                .addContainerGap(384, Short.MAX_VALUE))
-        );
-        fly_droneLayout.setVerticalGroup(
-            fly_droneLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(fly_droneLayout.createSequentialGroup()
-                .addGap(56, 56, 56)
-                .addGroup(fly_droneLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
-                    .addGroup(fly_droneLayout.createSequentialGroup()
-                        .addGroup(fly_droneLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                            .addComponent(jLabel160)
-                            .addComponent(storeNameFlyDrone, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                        .addGap(18, 18, 18)
-                        .addGroup(fly_droneLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                            .addComponent(droneIDFlyDrone, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(jLabel161))
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                        .addComponent(pilotAccountFlyDrone, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addGap(6, 6, 6))
-                    .addComponent(jLabel162))
-                .addGap(18, 18, 18)
-                .addComponent(flyDroneButton, javax.swing.GroupLayout.PREFERRED_SIZE, 40, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(18, 18, 18)
-                .addComponent(jScrollPane63, javax.swing.GroupLayout.PREFERRED_SIZE, 135, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addContainerGap(118, Short.MAX_VALUE))
-        );
-
-        employees_card.addTab("Fly Drone", fly_drone);
-
-        display_drones.setBackground(new java.awt.Color(255, 255, 255));
-
-        droneDisplay.setBackground(new java.awt.Color(255, 255, 255));
-        droneDisplay.setColumns(20);
-        droneDisplay.setRows(5);
-        jScrollPane60.setViewportView(droneDisplay);
-
-        jLabel151.setFont(new java.awt.Font("Keep Calm", 0, 14)); // NOI18N
-        jLabel151.setForeground(new java.awt.Color(0, 0, 0));
-        jLabel151.setText("Store Name");
-
-        storeNameDisplayDrones.setBackground(new java.awt.Color(255, 255, 255));
-        storeNameDisplayDrones.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                storeNameDisplayDronesActionPerformed(evt);
-            }
-        });
-
-        displayDronesButton.setBackground(new java.awt.Color(90, 88, 166));
-        displayDronesButton.setFont(new java.awt.Font("Keep Calm", 0, 14)); // NOI18N
-        displayDronesButton.setForeground(new java.awt.Color(255, 255, 255));
-        displayDronesButton.setText("Display_Drones");
-        displayDronesButton.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                displayDronesButtonActionPerformed(evt);
-            }
-        });
-
-        javax.swing.GroupLayout display_dronesLayout = new javax.swing.GroupLayout(display_drones);
-        display_drones.setLayout(display_dronesLayout);
-        display_dronesLayout.setHorizontalGroup(
-            display_dronesLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(display_dronesLayout.createSequentialGroup()
-                .addGap(139, 139, 139)
-                .addGroup(display_dronesLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addGroup(display_dronesLayout.createSequentialGroup()
-                        .addComponent(jLabel151, javax.swing.GroupLayout.PREFERRED_SIZE, 107, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                        .addComponent(storeNameDisplayDrones, javax.swing.GroupLayout.PREFERRED_SIZE, 250, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addGap(98, 98, 98)
-                        .addComponent(displayDronesButton))
-                    .addComponent(jScrollPane60, javax.swing.GroupLayout.PREFERRED_SIZE, 614, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addContainerGap(175, Short.MAX_VALUE))
-        );
-        display_dronesLayout.setVerticalGroup(
-            display_dronesLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, display_dronesLayout.createSequentialGroup()
-                .addContainerGap(54, Short.MAX_VALUE)
-                .addGroup(display_dronesLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(jLabel151)
-                    .addComponent(storeNameDisplayDrones, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(displayDronesButton, javax.swing.GroupLayout.PREFERRED_SIZE, 40, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addGap(31, 31, 31)
-                .addComponent(jScrollPane60, javax.swing.GroupLayout.PREFERRED_SIZE, 315, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(50, 50, 50))
-        );
-
-        employees_card.addTab("Display Drones", display_drones);
 
         make_pilot.setBackground(new java.awt.Color(255, 255, 255));
 
@@ -1690,6 +1363,310 @@ public class Sample_A5_Frame extends javax.swing.JFrame {
 
         employees_card.addTab("Make Pilot", make_pilot);
 
+        display_pilots.setBackground(new java.awt.Color(255, 255, 255));
+
+        displayPilots.setBackground(new java.awt.Color(255, 255, 255));
+        displayPilots.setColumns(20);
+        displayPilots.setRows(5);
+        jScrollPane58.setViewportView(displayPilots);
+
+        displayPilotsButton.setBackground(new java.awt.Color(90, 88, 166));
+        displayPilotsButton.setFont(new java.awt.Font("Keep Calm", 0, 14)); // NOI18N
+        displayPilotsButton.setForeground(new java.awt.Color(255, 255, 255));
+        displayPilotsButton.setText("Display_Pilots");
+        displayPilotsButton.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                displayPilotsButtonActionPerformed(evt);
+            }
+        });
+
+        javax.swing.GroupLayout display_pilotsLayout = new javax.swing.GroupLayout(display_pilots);
+        display_pilots.setLayout(display_pilotsLayout);
+        display_pilotsLayout.setHorizontalGroup(
+            display_pilotsLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(display_pilotsLayout.createSequentialGroup()
+                .addGap(154, 154, 154)
+                .addGroup(display_pilotsLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addComponent(displayPilotsButton, javax.swing.GroupLayout.PREFERRED_SIZE, 138, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(jScrollPane58, javax.swing.GroupLayout.PREFERRED_SIZE, 599, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addContainerGap(175, Short.MAX_VALUE))
+        );
+        display_pilotsLayout.setVerticalGroup(
+            display_pilotsLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(display_pilotsLayout.createSequentialGroup()
+                .addGap(50, 50, 50)
+                .addComponent(displayPilotsButton, javax.swing.GroupLayout.PREFERRED_SIZE, 40, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(28, 28, 28)
+                .addComponent(jScrollPane58, javax.swing.GroupLayout.PREFERRED_SIZE, 334, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addContainerGap(38, Short.MAX_VALUE))
+        );
+
+        employees_card.addTab("Display Pilots", display_pilots);
+
+        make_drone.setBackground(java.awt.Color.white);
+
+        jLabel147.setBackground(new java.awt.Color(0, 0, 0));
+        jLabel147.setFont(new java.awt.Font("Keep Calm", 0, 14)); // NOI18N
+        jLabel147.setForeground(new java.awt.Color(0, 0, 0));
+        jLabel147.setText("Store Name");
+
+        jLabel148.setBackground(new java.awt.Color(0, 0, 0));
+        jLabel148.setFont(new java.awt.Font("Keep Calm", 0, 14)); // NOI18N
+        jLabel148.setForeground(new java.awt.Color(0, 0, 0));
+        jLabel148.setText("Drone ID");
+
+        jLabel149.setBackground(new java.awt.Color(0, 0, 0));
+        jLabel149.setFont(new java.awt.Font("Keep Calm", 0, 14)); // NOI18N
+        jLabel149.setForeground(new java.awt.Color(0, 0, 0));
+        jLabel149.setText("Weight Capacity");
+
+        jLabel150.setBackground(new java.awt.Color(0, 0, 0));
+        jLabel150.setFont(new java.awt.Font("Keep Calm", 0, 14)); // NOI18N
+        jLabel150.setForeground(new java.awt.Color(0, 0, 0));
+        jLabel150.setText("Deliveries Before Refuel");
+
+        storeNameMakeDrone.setBackground(java.awt.Color.white);
+        storeNameMakeDrone.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                storeNameMakeDroneActionPerformed(evt);
+            }
+        });
+
+        droneID.setBackground(java.awt.Color.white);
+        droneID.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                droneIDActionPerformed(evt);
+            }
+        });
+
+        weightCapacity.setBackground(java.awt.Color.white);
+        weightCapacity.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                weightCapacityActionPerformed(evt);
+            }
+        });
+
+        deliveriesBeforeRefuel.setBackground(java.awt.Color.white);
+        deliveriesBeforeRefuel.setToolTipText("");
+
+        makeDroneButton.setBackground(new java.awt.Color(90, 88, 166));
+        makeDroneButton.setFont(new java.awt.Font("Keep Calm", 0, 14)); // NOI18N
+        makeDroneButton.setForeground(new java.awt.Color(255, 255, 255));
+        makeDroneButton.setText("Make_Drone");
+        makeDroneButton.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                makeDroneButtonActionPerformed(evt);
+            }
+        });
+
+        statusMakeDrone.setBackground(java.awt.Color.white);
+        statusMakeDrone.setColumns(20);
+        statusMakeDrone.setRows(5);
+        jScrollPane59.setViewportView(statusMakeDrone);
+
+        javax.swing.GroupLayout make_droneLayout = new javax.swing.GroupLayout(make_drone);
+        make_drone.setLayout(make_droneLayout);
+        make_droneLayout.setHorizontalGroup(
+            make_droneLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(make_droneLayout.createSequentialGroup()
+                .addGap(146, 146, 146)
+                .addGroup(make_droneLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addComponent(jLabel149)
+                    .addGroup(make_droneLayout.createSequentialGroup()
+                        .addGroup(make_droneLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addGroup(make_droneLayout.createSequentialGroup()
+                                .addGroup(make_droneLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                                    .addComponent(jLabel148, javax.swing.GroupLayout.PREFERRED_SIZE, 118, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                    .addComponent(jLabel147, javax.swing.GroupLayout.PREFERRED_SIZE, 118, javax.swing.GroupLayout.PREFERRED_SIZE))
+                                .addGap(95, 95, 95))
+                            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, make_droneLayout.createSequentialGroup()
+                                .addComponent(jLabel150, javax.swing.GroupLayout.PREFERRED_SIZE, 195, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                .addGap(18, 18, 18)))
+                        .addGroup(make_droneLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
+                            .addComponent(makeDroneButton, javax.swing.GroupLayout.PREFERRED_SIZE, 135, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addGroup(make_droneLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING, false)
+                                .addComponent(deliveriesBeforeRefuel, javax.swing.GroupLayout.Alignment.LEADING)
+                                .addComponent(weightCapacity, javax.swing.GroupLayout.Alignment.LEADING)
+                                .addComponent(droneID, javax.swing.GroupLayout.Alignment.LEADING)
+                                .addComponent(storeNameMakeDrone, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.PREFERRED_SIZE, 276, javax.swing.GroupLayout.PREFERRED_SIZE))
+                            .addComponent(jScrollPane59, javax.swing.GroupLayout.PREFERRED_SIZE, 276, javax.swing.GroupLayout.PREFERRED_SIZE))))
+                .addContainerGap(293, Short.MAX_VALUE))
+        );
+        make_droneLayout.setVerticalGroup(
+            make_droneLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(make_droneLayout.createSequentialGroup()
+                .addGap(51, 51, 51)
+                .addGroup(make_droneLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(storeNameMakeDrone, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(jLabel147, javax.swing.GroupLayout.PREFERRED_SIZE, 23, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addGap(18, 18, 18)
+                .addGroup(make_droneLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(droneID, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(jLabel148))
+                .addGap(18, 18, 18)
+                .addGroup(make_droneLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(weightCapacity, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(jLabel149))
+                .addGap(18, 18, 18)
+                .addGroup(make_droneLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(deliveriesBeforeRefuel, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(jLabel150))
+                .addGap(18, 18, 18)
+                .addComponent(makeDroneButton, javax.swing.GroupLayout.PREFERRED_SIZE, 40, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(33, 33, 33)
+                .addComponent(jScrollPane59, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addContainerGap(110, Short.MAX_VALUE))
+        );
+
+        employees_card.addTab("Make Drone", make_drone);
+
+        display_drones.setBackground(new java.awt.Color(255, 255, 255));
+
+        droneDisplay.setBackground(new java.awt.Color(255, 255, 255));
+        droneDisplay.setColumns(20);
+        droneDisplay.setRows(5);
+        jScrollPane60.setViewportView(droneDisplay);
+
+        jLabel151.setFont(new java.awt.Font("Keep Calm", 0, 14)); // NOI18N
+        jLabel151.setForeground(new java.awt.Color(0, 0, 0));
+        jLabel151.setText("Store Name");
+
+        storeNameDisplayDrones.setBackground(new java.awt.Color(255, 255, 255));
+        storeNameDisplayDrones.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                storeNameDisplayDronesActionPerformed(evt);
+            }
+        });
+
+        displayDronesButton.setBackground(new java.awt.Color(90, 88, 166));
+        displayDronesButton.setFont(new java.awt.Font("Keep Calm", 0, 14)); // NOI18N
+        displayDronesButton.setForeground(new java.awt.Color(255, 255, 255));
+        displayDronesButton.setText("Display_Drones");
+        displayDronesButton.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                displayDronesButtonActionPerformed(evt);
+            }
+        });
+
+        javax.swing.GroupLayout display_dronesLayout = new javax.swing.GroupLayout(display_drones);
+        display_drones.setLayout(display_dronesLayout);
+        display_dronesLayout.setHorizontalGroup(
+            display_dronesLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(display_dronesLayout.createSequentialGroup()
+                .addGap(139, 139, 139)
+                .addGroup(display_dronesLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addGroup(display_dronesLayout.createSequentialGroup()
+                        .addComponent(jLabel151, javax.swing.GroupLayout.PREFERRED_SIZE, 107, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                        .addComponent(storeNameDisplayDrones, javax.swing.GroupLayout.PREFERRED_SIZE, 250, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addGap(98, 98, 98)
+                        .addComponent(displayDronesButton))
+                    .addComponent(jScrollPane60, javax.swing.GroupLayout.PREFERRED_SIZE, 614, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addContainerGap(175, Short.MAX_VALUE))
+        );
+        display_dronesLayout.setVerticalGroup(
+            display_dronesLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, display_dronesLayout.createSequentialGroup()
+                .addContainerGap(54, Short.MAX_VALUE)
+                .addGroup(display_dronesLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(jLabel151)
+                    .addComponent(storeNameDisplayDrones, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(displayDronesButton, javax.swing.GroupLayout.PREFERRED_SIZE, 40, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addGap(31, 31, 31)
+                .addComponent(jScrollPane60, javax.swing.GroupLayout.PREFERRED_SIZE, 315, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(50, 50, 50))
+        );
+
+        employees_card.addTab("Display Drones", display_drones);
+
+        fly_drone.setBackground(new java.awt.Color(255, 255, 255));
+
+        jLabel160.setFont(new java.awt.Font("Keep Calm", 0, 14)); // NOI18N
+        jLabel160.setForeground(new java.awt.Color(0, 0, 0));
+        jLabel160.setText("Store Name");
+
+        storeNameFlyDrone.setBackground(new java.awt.Color(255, 255, 255));
+        storeNameFlyDrone.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                storeNameFlyDroneActionPerformed(evt);
+            }
+        });
+
+        jLabel161.setFont(new java.awt.Font("Keep Calm", 0, 14)); // NOI18N
+        jLabel161.setForeground(new java.awt.Color(0, 0, 0));
+        jLabel161.setText("Drone ID");
+
+        droneIDFlyDrone.setBackground(new java.awt.Color(255, 255, 255));
+
+        jLabel162.setFont(new java.awt.Font("Keep Calm", 0, 14)); // NOI18N
+        jLabel162.setForeground(new java.awt.Color(0, 0, 0));
+        jLabel162.setText("Pilot Account");
+
+        pilotAccountFlyDrone.setBackground(new java.awt.Color(255, 255, 255));
+
+        flyDroneButton.setBackground(new java.awt.Color(90, 88, 166));
+        flyDroneButton.setFont(new java.awt.Font("Keep Calm", 0, 14)); // NOI18N
+        flyDroneButton.setForeground(new java.awt.Color(255, 255, 255));
+        flyDroneButton.setText("Fly_Drone");
+        flyDroneButton.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                flyDroneButtonActionPerformed(evt);
+            }
+        });
+
+        flyDroneStatus.setBackground(new java.awt.Color(255, 255, 255));
+        flyDroneStatus.setColumns(20);
+        flyDroneStatus.setRows(5);
+        jScrollPane63.setViewportView(flyDroneStatus);
+
+        javax.swing.GroupLayout fly_droneLayout = new javax.swing.GroupLayout(fly_drone);
+        fly_drone.setLayout(fly_droneLayout);
+        fly_droneLayout.setHorizontalGroup(
+            fly_droneLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(fly_droneLayout.createSequentialGroup()
+                .addGap(154, 154, 154)
+                .addGroup(fly_droneLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addComponent(jLabel160, javax.swing.GroupLayout.PREFERRED_SIZE, 89, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addGroup(fly_droneLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
+                        .addComponent(flyDroneButton, javax.swing.GroupLayout.PREFERRED_SIZE, 120, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addGroup(fly_droneLayout.createSequentialGroup()
+                            .addGroup(fly_droneLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                                .addComponent(jLabel161)
+                                .addComponent(jLabel162))
+                            .addGap(18, 18, 18)
+                            .addGroup(fly_droneLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
+                                .addComponent(droneIDFlyDrone)
+                                .addComponent(pilotAccountFlyDrone)
+                                .addComponent(storeNameFlyDrone)
+                                .addComponent(jScrollPane63, javax.swing.GroupLayout.PREFERRED_SIZE, 273, javax.swing.GroupLayout.PREFERRED_SIZE)))))
+                .addContainerGap(384, Short.MAX_VALUE))
+        );
+        fly_droneLayout.setVerticalGroup(
+            fly_droneLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(fly_droneLayout.createSequentialGroup()
+                .addGap(56, 56, 56)
+                .addGroup(fly_droneLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
+                    .addGroup(fly_droneLayout.createSequentialGroup()
+                        .addGroup(fly_droneLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                            .addComponent(jLabel160)
+                            .addComponent(storeNameFlyDrone, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                        .addGap(18, 18, 18)
+                        .addGroup(fly_droneLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                            .addComponent(droneIDFlyDrone, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(jLabel161))
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                        .addComponent(pilotAccountFlyDrone, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addGap(6, 6, 6))
+                    .addComponent(jLabel162))
+                .addGap(18, 18, 18)
+                .addComponent(flyDroneButton, javax.swing.GroupLayout.PREFERRED_SIZE, 40, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(18, 18, 18)
+                .addComponent(jScrollPane63, javax.swing.GroupLayout.PREFERRED_SIZE, 135, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addContainerGap(118, Short.MAX_VALUE))
+        );
+
+        employees_card.addTab("Fly Drone", fly_drone);
+
         cards_container.add(employees_card, "card3");
 
         leftPanel.setBackground(new java.awt.Color(90, 88, 166));
@@ -1822,7 +1799,7 @@ public class Sample_A5_Frame extends javax.swing.JFrame {
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(layout.createSequentialGroup()
                 .addComponent(bg, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(0, 13, Short.MAX_VALUE))
+                .addGap(0, 14, Short.MAX_VALUE))
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -1897,21 +1874,44 @@ public class Sample_A5_Frame extends javax.swing.JFrame {
 
     private void makeStoreButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_makeStoreButtonActionPerformed
         // TODO add your handling code here:
-        String storeNameString = storeName.getText(); 
+        String storeNameString = storeName.getText().trim();
+        String storeRevenue = revenue.getText().trim(); 
+        
+        if (storeNameString.isEmpty() || storeRevenue.isEmpty()){
+            JOptionPane.showMessageDialog(this, "Please complete all the fields", "", JOptionPane.ERROR_MESSAGE);
+            return;
+        }
+        if(storeRevenue.matches("[0-9]+") == false) {
+            JOptionPane.showMessageDialog(this, "Invalid input value", "", JOptionPane.ERROR_MESSAGE);
+            return;
+        }
         String command = makeStoreButton.getText();
-        String storeRevenue = revenue.getText(); 
         String overallCommand = command+","+storeNameString+","+storeRevenue; 
         String output = DeliveryService.execute(overallCommand); 
-        statusWindow.setText(output);
+        String[] message = output.split(":");
+       
+        if (message[0].equals("Error")){
+            JOptionPane.showMessageDialog(this, message[1], "", JOptionPane.ERROR_MESSAGE);
+        }
+        else{
+            JOptionPane.showMessageDialog(this, message[1], "", JOptionPane.PLAIN_MESSAGE);
+            storeName.setText("");
+            revenue.setText("");
+            
+            
+            //WHEN AND WHERE IS HAPPENING
+            int probScaleValue = probCollisionStore.getValue(); 
+            double probability = (double) (probScaleValue/100.0); 
+            String probabilityString = Double.toString(probability);
+            output = DeliveryService.execute("set_probability,"+storeNameString+","+probabilityString);
+
+            //Set Angry Birds
+            int numAngryBirds = numAngryBirdsStore.getValue(); 
+        }
+        
        
             
-        int probScaleValue = probCollisionStore.getValue(); 
-        double probability = (double) (probScaleValue/100.0); 
-        String probabilityString = Double.toString(probability);
-        output = DeliveryService.execute("set_probability,"+storeNameString+","+probabilityString);
         
-        //Set Angry Birds
-        int numAngryBirds = numAngryBirdsStore.getValue(); 
         
     }//GEN-LAST:event_makeStoreButtonActionPerformed
 
@@ -1923,7 +1923,15 @@ public class Sample_A5_Frame extends javax.swing.JFrame {
         String command  = setProbButton.getText().strip();
         String overallCommand = command+","+storeNameString+","+Double.toString(probability);
         String output = DeliveryService.execute(overallCommand);
-        statusWindow.setText(output);
+        String[] message = output.split(":");
+        System.out.println(output);
+        if (message[0].equals("ERROR")){
+            JOptionPane.showMessageDialog(this, message[1], "Error", JOptionPane.ERROR_MESSAGE);
+        }
+        else{
+            JOptionPane.showMessageDialog(this, message[1], "OK", JOptionPane.PLAIN_MESSAGE);
+        }
+
     }//GEN-LAST:event_setProbButtonActionPerformed
 
     private void setNumAngryBirdsActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_setNumAngryBirdsActionPerformed
@@ -1932,8 +1940,14 @@ public class Sample_A5_Frame extends javax.swing.JFrame {
         int  numberOfAngryBirds = numAngryBirdsStore.getValue(); 
         String storeNameString = storeName.getText().strip(); 
         String overallCommand = command+","+storeNameString+","+Integer.toString(numberOfAngryBirds); 
-        String output = DeliveryService.execute(overallCommand); 
-        statusWindow.setText(output);
+        String output = DeliveryService.execute(overallCommand);
+        String[] message = output.split(":");
+        if (message[0].equals("ERROR")){
+            JOptionPane.showMessageDialog(this, message[1], "Error", JOptionPane.ERROR_MESSAGE);
+        }
+        else{
+            JOptionPane.showMessageDialog(this, message[1], "OK", JOptionPane.PLAIN_MESSAGE);
+        }
     }//GEN-LAST:event_setNumAngryBirdsActionPerformed
 
     private void displayStoreButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_displayStoreButtonActionPerformed
@@ -1951,19 +1965,45 @@ public class Sample_A5_Frame extends javax.swing.JFrame {
         // TODO add your handling code here:
         String storeNameSellItemString = storeNameSellItem.getText();
         String itemName = itemNameSellItem.getText(); 
-        String command = sellItemButton.getText(); 
         String itemCount = itemCountSellItem.getText();
+        if (storeNameSellItemString.isEmpty() || itemName.isEmpty() || itemCount.isEmpty()){
+            JOptionPane.showMessageDialog(this, "Please complete all the fields", "", JOptionPane.ERROR_MESSAGE);
+            return;
+        }
+        if(itemCount.matches("[0-9]+") == false) {
+            JOptionPane.showMessageDialog(this, "Invalid input value", "", JOptionPane.ERROR_MESSAGE);
+            return;
+        }
+        String command = sellItemButton.getText(); 
         String overallCommand = command+","+storeNameSellItemString+","+itemName+","+itemCount; 
-        String status = DeliveryService.execute(overallCommand); 
-        statusWindowSellItem.setText(status);
+        String output = DeliveryService.execute(overallCommand);
+        String[] message = output.split(":");
+        if (message[0].equals("ERROR")){
+            JOptionPane.showMessageDialog(this, message[1], "Error", JOptionPane.ERROR_MESSAGE);
+        }
+        else{
+            JOptionPane.showMessageDialog(this, message[1], "OK", JOptionPane.PLAIN_MESSAGE);
+            storeNameSellItem.setText("");
+            itemNameSellItem.setText("");
+            itemCountSellItem.setText("");
+        }
+
     }//GEN-LAST:event_sellItemButtonActionPerformed
 
     private void displayItemsButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_displayItemsButtonActionPerformed
         // TODO add your handling code here:
         String command = displayItemsButton.getText().strip(); 
-        String storeName = storeNameDisplayItems.getText().strip(); 
+        String storeName = storeNameDisplayItems.getText().strip();
+        if (storeName.isEmpty()){
+            JOptionPane.showMessageDialog(this, "Please complete the field", "", JOptionPane.ERROR_MESSAGE);
+            return;
+        }
         command = command+","+storeName; 
-        String output = DeliveryService.execute(command); 
+        System.out.print(command);
+        System.out.print("BER");
+        String output = DeliveryService.execute(command);
+        System.out.print(output);
+        System.out.print("AFTER");
         itemDisplay.setText(output); 
     }//GEN-LAST:event_displayItemsButtonActionPerformed
 
@@ -2157,6 +2197,30 @@ public class Sample_A5_Frame extends javax.swing.JFrame {
         cards_container.revalidate();
     }//GEN-LAST:event_btnEmployeesActionPerformed
 
+    private void store_cardMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_store_cardMouseClicked
+        // TODO add your handling code here:
+        storeDisplayPane.setText("");
+        itemDisplay.setText("");
+        int tabIndex = store_card.getSelectedIndex();
+        switch (tabIndex) {
+            case 0 -> {
+                storeDisplayPane.setText("");
+                itemDisplay.setText("");
+                storeNameDisplayItems.setText("");
+            }
+            case 1 -> {
+                itemDisplay.setText("");
+                storeNameDisplayItems.setText("");
+            }
+            case 2 -> {
+                storeDisplayPane.setText("");
+                itemDisplay.setText("");
+                storeNameDisplayItems.setText("");
+            }
+            default -> storeDisplayPane.setText("");
+        }
+    }//GEN-LAST:event_store_cardMouseClicked
+
     /**
      * @param args the command line arguments
      */
@@ -2286,10 +2350,8 @@ public class Sample_A5_Frame extends javax.swing.JFrame {
     private javax.swing.JScrollPane jScrollPane11;
     private javax.swing.JScrollPane jScrollPane12;
     private javax.swing.JScrollPane jScrollPane13;
-    private javax.swing.JScrollPane jScrollPane19;
     private javax.swing.JScrollPane jScrollPane2;
     private javax.swing.JScrollPane jScrollPane20;
-    private javax.swing.JScrollPane jScrollPane21;
     private javax.swing.JScrollPane jScrollPane22;
     private javax.swing.JScrollPane jScrollPane48;
     private javax.swing.JScrollPane jScrollPane49;
@@ -2344,12 +2406,10 @@ public class Sample_A5_Frame extends javax.swing.JFrame {
     private javax.swing.JPanel start_order;
     private javax.swing.JTextArea statusMakeDrone;
     private javax.swing.JTextArea statusMakePilot;
-    private javax.swing.JTextArea statusWindow;
     private javax.swing.JTextArea statusWindowCancelOrder;
     private javax.swing.JTextArea statusWindowMakeCustomer;
     private javax.swing.JTextArea statusWindowPurchaseOrder;
     private javax.swing.JTextArea statusWindowRequestItem;
-    private javax.swing.JTextArea statusWindowSellItem;
     private javax.swing.JTextArea statusWindowStartOrder;
     private javax.swing.JTextArea storeDisplayPane;
     private javax.swing.JTextField storeName;
