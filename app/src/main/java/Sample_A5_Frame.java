@@ -1989,6 +1989,11 @@ public class Sample_A5_Frame extends javax.swing.JFrame {
 
     private void displayOrdersButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_displayOrdersButtonActionPerformed
         // TODO add your handling code here:
+        String command = displayOrdersButton.getText().strip(); 
+        String storeName = storeNameDisplayOrders.getText().strip(); 
+        String overallCommand = command+","+storeName;
+        String output = DeliveryService.execute(overallCommand); 
+        displayOrderWindow.setText(output);
     }//GEN-LAST:event_displayOrdersButtonActionPerformed
 
     private void orderIdentifierRequestItemActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_orderIdentifierRequestItemActionPerformed
@@ -2081,6 +2086,14 @@ public class Sample_A5_Frame extends javax.swing.JFrame {
 
     private void makeDroneButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_makeDroneButtonActionPerformed
         // TODO add your handling code here:
+        String command = makeDroneButton.getText().strip(); 
+        String storeNameMakeDroneString = storeNameMakeDrone.getText().strip(); 
+        String droneIDString = droneID.getText().strip(); 
+        String weightCap = weightCapacity.getText().strip(); 
+        String deliveriesBeforeRefuelString = deliveriesBeforeRefuel.getText().strip();
+        String overallCommand = command+","+storeNameMakeDroneString+","+droneIDString+","+weightCap+","+deliveriesBeforeRefuelString;
+        String output = DeliveryService.execute(overallCommand);
+        statusMakeDrone.setText(output);
     }//GEN-LAST:event_makeDroneButtonActionPerformed
 
     private void storeNameDisplayDronesActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_storeNameDisplayDronesActionPerformed
