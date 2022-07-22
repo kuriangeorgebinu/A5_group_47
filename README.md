@@ -1,3 +1,5 @@
+required java jdk 17
+
 # RUN
 
 - `find app -name "*.java" | xargs javac -d ./target`
