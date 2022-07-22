@@ -8,3 +8,5 @@ build
 app/bin/
 .vscode/
 target/
+docker_results
+.idea/

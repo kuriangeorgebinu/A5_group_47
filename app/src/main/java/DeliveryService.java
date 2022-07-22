@@ -14,7 +14,47 @@ public class DeliveryService {
     private static final List<Customer> customers = new ArrayList();
     private static final CommandUtilsFactory commandUtilsFactory = new CommandUtilsFactory();
 
-//    
+//  
+
+    public void commandLoop() {
+        Scanner commandLineInput = new Scanner(System.in);
+        String wholeInputLine;
+        String[] tokens;
+        final String DELIMITER = ",";
+
+        while (true) {
+            try {
+                // Determine the next command and echo it to the monitor for testing purposes
+                wholeInputLine = commandLineInput.nextLine();
+                tokens = wholeInputLine.split(DELIMITER);
+                System.out.println("> " + wholeInputLine);
+                List<String> commandTypes = Arrays.stream(CommandTypes.values()).map(Enum::name).toList();
+                if (tokens[0].equals("author")) {
+                    execute(wholeInputLine);
+                } else if (wholeInputLine.contains("//")) {
+                    //do nothing
+                } else if (tokens[0].equals("stop")) {
+                    System.out.println("stop acknowledged");
+                    break;
+                } else if (!commandTypes.contains(tokens[0].toUpperCase(Locale.ROOT))) {
+                    System.out.println("command " + tokens[0] + " NOT acknowledged");
+                }
+                else {
+                    execute(wholeInputLine);
+                }
+            } catch (Exception e) {
+                e.printStackTrace();
+                System.out.println();
+            }
+        }
+
+        System.out.println("simulation terminated");
+        commandLineInput.close();
+    }
+
+
+
+
     public static String execute(String sampleCommand) {
         sampleCommand = sampleCommand.strip(); // remove unnecessary space
         CommandTypes commandType = commandTypes(sampleCommand);
