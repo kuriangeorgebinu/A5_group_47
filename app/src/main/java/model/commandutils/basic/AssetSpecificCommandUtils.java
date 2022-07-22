@@ -27,8 +27,11 @@ public class AssetSpecificCommandUtils implements  CommandUtils{
             return "ERROR:store_identifier_does_not_exist"; 
         } else {
             Drone drone = new Drone(droneId, maxTrips, liftingCapacity);
+            Store store = stores.get(storeNames.indexOf(storeName));
+            drone.setStore(store);
             int expectedIndex = storeNames.indexOf(storeName);
             boolean uniqueDrone = stores.get(expectedIndex).addNewDrone(drone);
+
             if (uniqueDrone) {
                 System.out.println("OK:change_completed");
                 return "OK:change_completed"; 

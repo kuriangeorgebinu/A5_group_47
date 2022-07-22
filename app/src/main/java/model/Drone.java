@@ -116,22 +116,23 @@ public class Drone {
         List<String> orderList = getOrderList().stream().map(Order::getOrderIdentifier).toList();
 
         if (getTripsPendingBeforeFuel() <= 0)  {
-            List<Drone> alternativeDrones = getStore().getDroneList().stream().filter(drone -> (this.droneId!=drone.getDroneId()) && drone.getTripsPendingBeforeFuel()>0).toList();
+            List<Drone> alternativeDrones = getStore().getDroneList().stream()
+                    .filter(drone -> (this.droneId!=drone.getDroneId()) && drone.getTripsPendingBeforeFuel()>0 && order.getTotalWeight()<=getLiftingCapacity()).toList();
             if (alternativeDrones.size()<=0) {
                 System.out.println("drone_needs_fuel! No available drones to switched");
-                return "drone_needs_fuel! No available drones to be switched to";
+                return "ERROR:drone_needs_fuel! No available drones to be switched to";
             } else {
                 System.out.println("drone needs fuel! Switching to the next available drone");
                 Drone drone = alternativeDrones.get(0);
                 drone.getOrderList().add(order);
                 order.setDrone(drone);
                 getOrderList().remove(order);
-                return "drone needs fuel! Switching to the next available drone";
+                return "ERROR:drone needs fuel! Switching to the next available drone";
             }
         }
         else if (getDronePilot() == null) {
             System.out.println("drone_needs_pilot");
-            return "drone_needs_pilot";
+            return "ERROR:drone_needs_pilot";
         }
         else {
             /* Generate Random numbers with probability of the prob of location assigned */
@@ -141,7 +142,7 @@ public class Drone {
             if(trigger){
                 System.out.println("Angry bird has hit the drone. Drone "+getDroneId()+" has to go for repair. Try order again!");
                 setNumTripsExecuted(getNumTripsExecuted()+1);
-                return "Angry bird has hit the drone. Drone "+getDroneId()+" has to go for repair. Try order again!";
+                return "ERROR:Angry bird has hit the drone. Drone "+getDroneId()+" has to go for repair. Try order again!";
             } else {
                 if ((orderList.contains(order.getOrderIdentifier()))) {
                     getDronePilot().setNumDeliveries(getDronePilot().getNumDeliveries()+1);
