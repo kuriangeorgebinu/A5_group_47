@@ -86,7 +86,7 @@ public class Order {
     }
 
     //behaviour
-    public boolean addNewLineItem(LineItem lineItem) {
+    public String addNewLineItem(LineItem lineItem) {
         if (getLineItems() == null) setLineItem(new ArrayList<>());
         List<String> itemsPresent = getLineItems().stream().map(item -> item.getItem().getItemName()).toList();
         double currentWeight = drone.getTotalPendingOrderWeights() + lineItem.getItem().getWeight()*lineItem.getQuantity();
@@ -94,18 +94,19 @@ public class Order {
         if (!itemsPresent.contains(lineItem.getItem().getItemName())) {
             if (currentWeight >= drone.getLiftingCapacity()) {
                 System.out.println("ERROR:drone_cant_carry_new_item");
-                return false;
+                return "ERROR:drone_cant_carry_new_item";
             } else if (currentCost > customer.getCredit()) {
                 System.out.println("ERROR:customer_cant_afford_new_item");
-                return false;
+                return "ERROR:customer_cant_afford_new_item";
             }
             this.getLineItems().add(lineItem);
             calculateTotalCost();
             calculateTotalWeight();
-            return true;
+            System.out.println("OK:change_completed");
+            return "OK:change_completed";
         }
         System.out.println("ERROR:item_already_ordered");
-        return false;
+        return "ERROR:item_already_ordered";
     }
 
     public void deductCustomerCredits(double orderCost) {

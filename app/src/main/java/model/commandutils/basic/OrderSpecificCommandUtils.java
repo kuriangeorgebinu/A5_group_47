@@ -18,7 +18,7 @@ public class OrderSpecificCommandUtils implements CommandUtils{
         String droneId = commands[3];
         String customerAccount = commands[4];
         List<String> storeIdentifiers = storeList.stream().map(Store::getName).toList();
-        ;
+        System.out.println(makeOrderCommand);
         if (!storeIdentifiers.contains(storeName)) {
             System.out.println("ERROR:store_identifier_does_not_exist");
             return "ERROR:store_identifier_does_not_exist";
@@ -187,9 +187,7 @@ public class OrderSpecificCommandUtils implements CommandUtils{
                 }
                 else {
                     Item item = itemInventory.get(itemNames.indexOf(itemName));
-                    order.addNewLineItem(new LineItem(item, Integer.parseInt(quantity), Double.parseDouble(unitPrice)));
-                    System.out.println("OK:change_completed");
-                    return "OK:change_completed";
+                    return order.addNewLineItem(new LineItem(item, Integer.parseInt(quantity), Double.parseDouble(unitPrice)));
                 }
             }
         }

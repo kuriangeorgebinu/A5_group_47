@@ -25,8 +25,8 @@ public class AngryBirdsSpecificCommandUtils implements CommandUtils {
                     angryBird.setLocation(storeList.get(storeIdentifiers.indexOf(locationTypeId)).getLocationProperty());
                 }
                 storeList.get(storeIdentifiers.indexOf(locationTypeId)).getLocationProperty().setAngryBirds(angryBirds);
-                System.out.println("OK:change_completed");
-                return "OK:change_completed";
+                System.out.println("OK:number of angry birds set to "+numberOfBirds);
+                return "OK:number of angry birds set to "+numberOfBirds;
             }
          else if (customerIdentifiers.contains(locationTypeId)) {
             System.out.println(command); 
@@ -37,12 +37,12 @@ public class AngryBirdsSpecificCommandUtils implements CommandUtils {
                 angryBird.setLocation(customerList.get(customerIdentifiers.indexOf(locationTypeId)).getLocationProperty());
             }
             customerList.get(customerIdentifiers.indexOf(locationTypeId)).getLocationProperty().setAngryBirds(angryBirds);
-            System.out.println("OK:change_completed");
-            return "OK:change_completed";
+            System.out.println("OK:number of angry birds set to "+numberOfBirds);
+            return "OK:number of angry birds set to "+numberOfBirds;
         }
         }
-        System.out.println("The location identifier is not valid");
-        return "The location identifier is not valid";
+        System.out.println("ERROR:The location identifier is not valid");
+        return "ERROR:The location identifier is not valid";
     }
 
     public String setProbabilityOfCollisionToLocation(String command, List<Store> storeList, List<Customer> customerList) {
@@ -56,17 +56,17 @@ public class AngryBirdsSpecificCommandUtils implements CommandUtils {
         if (locationTypeIdContains) {
             if (storeIdentifiers.contains(locationTypeId)) {
                 storeList.get(storeIdentifiers.indexOf(locationTypeId)).getLocationProperty().setProbCollision(Double.parseDouble(probability));
-                System.out.println("OK:change_completed");
-                return "OK:change_completed";
+                System.out.println("OK:probabilty set to "+probability);
+                return "OK:probabilty set to "+probability;
             }
             else if (customerIdentifiers.contains(locationTypeId)) {
                 customerList.get(customerIdentifiers.indexOf(locationTypeId)).getLocationProperty().setProbCollision(Double.parseDouble(probability));
-                System.out.println("OK:change_completed");
-                return "OK:change_completed";
+                System.out.println("OK:probabilty set to "+probability);
+                return "OK:probabilty set to "+probability;
             }
 
         }
-        System.out.println("location_identifier_is_not_valid");
-        return "location_identifier_is_not_valid";
+        System.out.println("ERROR:location_identifier_is_not_valid");
+        return "ERROR:location_identifier_is_not_valid";
     }
 }

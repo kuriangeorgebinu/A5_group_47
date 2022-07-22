@@ -1882,7 +1882,7 @@ public class Sample_A5_Frame extends javax.swing.JFrame {
         String output = DeliveryService.execute(overallCommand);
         String[] message = output.split(":");
         System.out.println(output);
-        if (message[0].equals("ERROR")){
+        if (message[0].strip().equals("ERROR")){
             JOptionPane.showMessageDialog(this, message[1], "", JOptionPane.ERROR_MESSAGE);
         }
         else{

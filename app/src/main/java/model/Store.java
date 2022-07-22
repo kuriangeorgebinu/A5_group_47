@@ -52,7 +52,7 @@ public class Store {
     }
 
     public List<Order> getOrderList() {
-        return orderList == null ? new ArrayList<>() : orderList; 
+        return orderList;
     }
 
     //Setters
@@ -103,6 +103,7 @@ public class Store {
         if (getOrderList() == null) {
             setOrderList(new ArrayList<>());
         }
+        System.out.println(order.getOrderIdentifier());
         List<String> orderIds = getOrderList().stream().map(Order::getOrderIdentifier).toList();
         if (!orderIds.contains(order.getOrderIdentifier())) {
             this.getOrderList().add(order);
