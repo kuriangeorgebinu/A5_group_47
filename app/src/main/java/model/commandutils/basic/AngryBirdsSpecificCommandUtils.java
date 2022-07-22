@@ -41,8 +41,8 @@ public class AngryBirdsSpecificCommandUtils implements CommandUtils {
             return "OK:change_completed";
         }
         }
-        System.out.println("The location identifier is not valid");
-        return "The location identifier is not valid";
+        System.out.println("ERROR:The location identifier is not valid");
+        return "ERROR:The location identifier is not valid";
     }
 
     public String setProbabilityOfCollisionToLocation(String command, List<Store> storeList, List<Customer> customerList) {
@@ -66,7 +66,7 @@ public class AngryBirdsSpecificCommandUtils implements CommandUtils {
             }
 
         }
-        System.out.println("location_identifier_is_not_valid");
-        return "location_identifier_is_not_valid";
+        System.out.println("ERROR:location_identifier_is_not_valid");
+        return "ERROR:location_identifier_is_not_valid";
     }
 }
