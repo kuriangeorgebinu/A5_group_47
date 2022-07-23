@@ -205,7 +205,6 @@
                                       <Component id="setProbButton" min="-2" pref="40" max="-2" attributes="0"/>
                                   </Group>
                                   <Group type="102" alignment="1" attributes="0">
-                                      <EmptySpace max="-2" attributes="0"/>
                                       <Group type="103" groupAlignment="3" attributes="0">
                                           <Component id="storeName" alignment="3" min="-2" max="-2" attributes="0"/>
                                           <Component id="storeNameLabel" alignment="3" min="-2" max="-2" attributes="0"/>
