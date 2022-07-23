@@ -1883,16 +1883,18 @@ public class Sample_A5_Frame extends javax.swing.JFrame {
             JOptionPane.showMessageDialog(this, message[1], "", JOptionPane.PLAIN_MESSAGE);
             storeName.setText("");
             revenue.setText("");
-            
-            
+
+            //Set Angry Birds
+            int numAngryBirds = numAngryBirdsStore.getValue();
+            output = DeliveryService.execute("make_angry_bird,"+storeNameString+","+numAngryBirds);
+
+
             //WHEN AND WHERE IS HAPPENING
             int probScaleValue = probCollisionStore.getValue(); 
             double probability = (double) (probScaleValue/100.0); 
             String probabilityString = Double.toString(probability);
             output = DeliveryService.execute("set_probability,"+storeNameString+","+probabilityString);
 
-            //Set Angry Birds
-            int numAngryBirds = numAngryBirdsStore.getValue(); 
         }  
     }//GEN-LAST:event_makeStoreButtonActionPerformed
 
