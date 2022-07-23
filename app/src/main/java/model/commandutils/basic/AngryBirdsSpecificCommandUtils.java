@@ -55,11 +55,19 @@ public class AngryBirdsSpecificCommandUtils implements CommandUtils {
         boolean locationTypeIdContains = (storeIdentifiers.contains(locationTypeId)) || (customerIdentifiers.contains(locationTypeId));
         if (locationTypeIdContains) {
             if (storeIdentifiers.contains(locationTypeId)) {
+                if(storeList.get(storeIdentifiers.indexOf(locationTypeId)).getLocationProperty().getAngryBirds().size() == 0) {
+                    System.out.println("ERROR:There must be at least one angry bird in that location");
+                    return "ERROR:There must be at least one angry bird in that location";
+                }
                 storeList.get(storeIdentifiers.indexOf(locationTypeId)).getLocationProperty().setProbCollision(Double.parseDouble(probability));
                 System.out.println("OK:probabilty set to "+probability);
                 return "OK:probabilty set to "+probability;
             }
             else if (customerIdentifiers.contains(locationTypeId)) {
+                if(customerList.get(customerIdentifiers.indexOf(locationTypeId)).getLocationProperty().getAngryBirds().size() == 0) {
+                    System.out.println("ERROR:There must be at least one angry bird in that location");
+                    return "ERROR:There must be at least one angry bird in that location";
+                }
                 customerList.get(customerIdentifiers.indexOf(locationTypeId)).getLocationProperty().setProbCollision(Double.parseDouble(probability));
                 System.out.println("OK:probabilty set to "+probability);
                 return "OK:probabilty set to "+probability;
